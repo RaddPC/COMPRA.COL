@@ -7,7 +7,7 @@
 const CONFIG = {
   // Número de WhatsApp SIN signos ni espacios, con código de país.
   // Ejemplo Colombia: "573001234567"
-  whatsappNumber: "573001234567",
+  whatsappNumber: "573332420240",
 
   // Nombre de la empresa / marca (se usa en el mensaje de WhatsApp)
   nombreEmpresa: "CompraCol",
