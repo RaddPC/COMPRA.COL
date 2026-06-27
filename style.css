@@ -117,25 +117,20 @@ input { font-family: inherit; }
   justify-content: space-between;
   gap: 24px;
 }
-.header__brand { display: flex; align-items: center; gap: 12px; }
+.header__brand { display: flex; align-items: center; gap: 14px; }
 .header__logo {
-  width: 44px;
-  height: 44px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   object-fit: contain;
   flex-shrink: 0;
 }
-.header__brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+.header__brand-text { display: flex; flex-direction: column; justify-content: center; }
 .header__brand-text strong {
   color: var(--color-on-dark);
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: .01em;
-}
-.header__brand-text small {
-  color: var(--color-on-dark-soft);
-  font-size: .7rem;
-  font-weight: 500;
 }
 .header__nav {
   display: flex;
