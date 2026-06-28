@@ -16,7 +16,7 @@
 <!-- BARRA DE ANUNCIO -->
 <!-- ============================================= -->
 <div class="announce">
-  <p>🚚 ENVÍO GRATIS &nbsp;·&nbsp; 💵 PAGO CONTRAENTREGA &nbsp;·&nbsp; 🇨🇴 A TODO EL PAÍS</p>
+  <p>🚚 ENVÍO GRATIS hoy &nbsp;·&nbsp; 💵 PAGO CONTRAENTREGA &nbsp;·&nbsp; 🇨🇴 A TODO EL PAÍS</p>
 </div>
 
 <!-- ============================================= -->
@@ -25,7 +25,7 @@
 <header class="header">
   <div class="header__inner">
     <div class="header__brand">
-      <img src="logo.png" alt="Logo de la empresa" class="header__logo" data-edit="logo-empresa">
+      <img src="img/logo.png" alt="Logo de la empresa" class="header__logo" data-edit="logo-empresa">
       <div class="header__brand-text">
         <strong data-edit="nombre-empresa">COMPRA<span class="accent-gold">COL</span></strong>
       </div>
@@ -50,20 +50,20 @@
 <section class="hero">
   <div class="hero__flag-arc" aria-hidden="true"></div>
   <div class="hero__inner">
-    <span class="hero__eyebrow">COMPRA SEGURA🔒</span>
+    <span class="hero__eyebrow">Compra Segura 🔒</span>
     <h1 class="hero__title">Lo que necesitás, <span class="accent-gold">al mejor precio</span> y sin riesgo</h1>
     <p class="hero__subtitle"></p>
     <div class="hero__actions">
       <a href="#catalogo" class="btn btn--primary">Ver catálogo</a>
-      
+      <a href="#" class="btn btn--whatsapp" id="hero-whatsapp">
         <svg viewBox="0 0 32 32" class="icon-wa" aria-hidden="true"><path d="M16.04 4C9.4 4 4 9.4 4 16.04c0 2.45.72 4.73 1.96 6.65L4 28l5.46-1.93a11.98 11.98 0 0 0 6.58 1.93c6.64 0 12.04-5.4 12.04-12.04C28.08 9.4 22.68 4 16.04 4zm0 21.7a9.6 9.6 0 0 1-5-1.4l-.36-.21-3.79 1.34 1.36-3.69-.24-.38a9.55 9.55 0 0 1-1.49-5.12c0-5.3 4.32-9.62 9.62-9.62 2.57 0 4.98.99 6.8 2.81a9.57 9.57 0 0 1 2.82 6.8c0 5.3-4.32 9.47-9.72 9.47zm5.27-7.15c-.29-.14-1.7-.84-1.96-.93-.26-.1-.46-.14-.65.14-.19.29-.75.93-.92 1.12-.17.19-.34.21-.63.07-1.71-.85-2.83-1.52-3.95-3.45-.3-.52.3-.48.86-1.6.1-.19.05-.36-.04-.5-.1-.14-.65-1.57-.89-2.15-.23-.56-.47-.49-.65-.5-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.76.36-.26.29-1 1-1 2.42 0 1.43 1.04 2.81 1.18 3 .15.19 2.06 3.15 5.02 4.29 2.49.97 3 .87 3.55.81.55-.06 1.7-.7 1.94-1.37.24-.67.24-1.24.17-1.37-.07-.12-.26-.19-.55-.33z"/></svg>
-        
+        Preguntar
       </a>
     </div>
     <div class="hero__trust">
       <span class="trust-pill">✓ Pago al recibir</span>
       <span class="trust-pill">✓ Envío gratis</span>
-      <span class="trust-pill">✓ Garantia segura</span>
+      <span class="trust-pill">✓ Cambios sin costo</span>
     </div>
   </div>
 </section>
@@ -113,16 +113,16 @@
 <section class="reviews" id="resenas">
   <div class="reviews__inner">
     <h2>Lo que dicen nuestros clientes</h2>
-    <p class="reviews__subtitle">Reseñas de WhatsApp</p>
+    <p class="reviews__subtitle">Reemplazá estas capturas por testimonios reales (chats de WhatsApp, reseñas de redes sociales, etc.)</p>
     <div class="reviews__grid">
       <figure class="reviews__card">
-        <img src="RESEÑAS01.png">
+        <img src="https://placehold.co/360x480/0d1b2a/f5b942?text=CAPTURA+1" alt="Testimonio 1 — reemplazar" data-edit="captura-1">
       </figure>
       <figure class="reviews__card">
-        <img src="RESEÑAS02.png">
+        <img src="https://placehold.co/360x480/0d1b2a/f5b942?text=CAPTURA+2" alt="Testimonio 2 — reemplazar" data-edit="captura-2">
       </figure>
       <figure class="reviews__card">
-        <img src="RESEÑAS03.png">
+        <img src="https://placehold.co/360x480/0d1b2a/f5b942?text=CAPTURA+3" alt="Testimonio 3 — reemplazar" data-edit="captura-3">
       </figure>
     </div>
   </div>
@@ -132,8 +132,11 @@
 <!-- FOOTER -->
 <!-- ============================================= -->
 <footer class="footer">
-  <p data-edit="nombre-empresa-footer">© 2026 COMPRACOL — Todos los derechos reservados</p>
-  <p class="footer__legal">Editá aquí tu correo de contacto, política de envíos y devoluciones.</p>
+  <p data-edit="nombre-empresa-footer">© 2026 COMPRA.COL.ONLINE — Todos los derechos reservados</p>
+  <p class="footer__legal">
+    compra.col.info@gmail.com &nbsp;·&nbsp;
+    <button class="footer__link" id="open-policies">Política de envíos y devoluciones</button>
+  </p>
 </footer>
 
 <!-- ============================================= -->
@@ -179,8 +182,8 @@
       <input type="tel" id="telefono" placeholder="Ej: 300 123 4567" required>
     </label>
     <label>
-      Departamento,Ciudad y dirección de envío
-      <input type="text" id="direccion" placeholder="Ej: Antioquia,Medellin Calle 5 #20-15 piso2" required>
+      Ciudad y dirección de envío
+      <input type="text" id="direccion" placeholder="Ej: Cali, Calle 5 #20-15" required>
     </label>
 
     <div class="checkout-form__summary" id="checkout-summary">
@@ -198,6 +201,32 @@
     </button>
     <p class="checkout-form__note">No se realiza ningún cobro en esta página. Confirmamos el pedido y el pago por WhatsApp.</p>
   </form>
+</div>
+
+<!-- ============================================= -->
+<!-- MODAL DE POLÍTICAS DE ENVÍO Y DEVOLUCIONES -->
+<!-- ============================================= -->
+<div class="checkout-overlay" id="policies-overlay"></div>
+<div class="checkout-modal policies-modal" id="policies-modal">
+  <div class="checkout-modal__header">
+    <h2>Políticas de envío y devoluciones</h2>
+    <button id="close-policies" aria-label="Cerrar">✕</button>
+  </div>
+
+  <div class="policies-content">
+    <h3>Política de envíos</h3>
+    <p>Realizamos envíos a toda Colombia. El tiempo de entrega estimado es de 2 a 5 días hábiles según tu ciudad. El envío es gratuito en pedidos dentro de las zonas cubiertas; en algunas ciudades apartadas puede aplicar un costo adicional, el cual te confirmamos por WhatsApp antes de despachar tu pedido.</p>
+    <p>Trabajamos con la modalidad de <strong>pago contraentrega</strong>: pagás en efectivo o por transferencia al transportador, solo cuando recibís tu producto en la puerta de tu casa.</p>
+
+    <h3>Política de devoluciones y cambios</h3>
+    <p>Si tu producto llega con algún daño o no corresponde a lo que pediste, tenés hasta 5 días calendario después de la entrega para solicitar el cambio o la devolución, sin costo adicional. Escribinos por WhatsApp con tu número de pedido y una foto del producto, y coordinamos la solución más rápida para vos.</p>
+    <p>No se aceptan devoluciones por cambio de opinión una vez abierto o usado el producto, salvo defecto de fábrica.</p>
+
+    <a href="#" class="btn btn--whatsapp btn--full" id="policies-whatsapp">
+      <svg viewBox="0 0 32 32" class="icon-wa" aria-hidden="true"><path d="M16.04 4C9.4 4 4 9.4 4 16.04c0 2.45.72 4.73 1.96 6.65L4 28l5.46-1.93a11.98 11.98 0 0 0 6.58 1.93c6.64 0 12.04-5.4 12.04-12.04C28.08 9.4 22.68 4 16.04 4zm0 21.7a9.6 9.6 0 0 1-5-1.4l-.36-.21-3.79 1.34 1.36-3.69-.24-.38a9.55 9.55 0 0 1-1.49-5.12c0-5.3 4.32-9.62 9.62-9.62 2.57 0 4.98.99 6.8 2.81a9.57 9.57 0 0 1 2.82 6.8c0 5.3-4.32 9.47-9.72 9.47zm5.27-7.15c-.29-.14-1.7-.84-1.96-.93-.26-.1-.46-.14-.65.14-.19.29-.75.93-.92 1.12-.17.19-.34.21-.63.07-1.71-.85-2.83-1.52-3.95-3.45-.3-.52.3-.48.86-1.6.1-.19.05-.36-.04-.5-.1-.14-.65-1.57-.89-2.15-.23-.56-.47-.49-.65-.5-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.76.36-.26.29-1 1-1 2.42 0 1.43 1.04 2.81 1.18 3 .15.19 2.06 3.15 5.02 4.29 2.49.97 3 .87 3.55.81.55-.06 1.7-.7 1.94-1.37.24-.67.24-1.24.17-1.37-.07-.12-.26-.19-.55-.33z"/></svg>
+      Tengo una duda sobre mi pedido
+    </a>
+  </div>
 </div>
 
 <!-- ============================================= -->
