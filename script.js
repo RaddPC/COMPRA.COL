@@ -16,10 +16,10 @@ const CONFIG = {
   moneda: "$",
 
   // Mensaje que se abre al tocar el botón flotante de WhatsApp (sin pedido)
-  mensajeFlotante: "Hola, quiero más información sobre los productos 🙋",
+  mensajeFlotante: "Hola, quiero más información sobre los productos 📦✅",
 
   // Mensaje del botón "Preguntar" del hero
-  mensajeHero: "Hola, vi su catálogo y quiero más información 🙋"
+  mensajeHero: "Hola, vi su catálogo y quiero más información 📦✅"
 };
 
 /* =========== 2. CATÁLOGO DE PRODUCTOS (EDITABLE) =========== */
