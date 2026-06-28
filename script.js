@@ -26,7 +26,7 @@ const CONFIG = {
 /* Agregá, quitá o editá productos aquí. "id" debe ser único.   */
 /* "tag" es opcional: úsalo para "Nuevo", "-20%", "Más vendido". */
 const PRODUCTS = [
-  { id: "p1",  name: "Producto 1 — Editar nombre",  price: 49900,  oldPrice: 69900,  tag: "Más vendido", img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+1" },
+  { id: "p1",  name: "Tensiometro Digital",  price: 79900,  oldPrice: 69900,  tag: "Más vendido", img: "007.png" },
   { id: "p2",  name: "Producto 2 — Editar nombre",  price: 35900,  oldPrice: null,   tag: null,          img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+2" },
   { id: "p3",  name: "Producto 3 — Editar nombre",  price: 89900,  oldPrice: 119900, tag: "-25%",        img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+3" },
   { id: "p4",  name: "Producto 4 — Editar nombre",  price: 27900,  oldPrice: null,   tag: "Nuevo",       img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+4" },
