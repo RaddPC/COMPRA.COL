@@ -438,7 +438,15 @@ input { font-family: inherit; }
     var(--color-red) 66.66%, var(--color-red) 100%
   );
 }
-.footer__legal { margin-top: 6px; opacity: .7; font-size: .78rem; }
+.footer__legal { margin-top: 6px; opacity: .85; font-size: .78rem; }
+.footer__link {
+  color: var(--color-gold);
+  font-size: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer__link:hover { color: var(--color-on-dark); }
 
 /* =====================================================
    CARRITO LATERAL (DRAWER)
@@ -604,6 +612,28 @@ input { font-family: inherit; }
 }
 .checkout-form__total strong { font-size: 1.4rem; color: var(--color-bg); }
 .checkout-form__note { text-align: center; font-size: .76rem; color: var(--color-ink-soft); }
+
+/* ---------- MODAL DE POLÍTICAS ---------- */
+.policies-modal { width: min(560px, 92vw); }
+.policies-content {
+  padding: 22px 26px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.policies-content h3 {
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--color-bg);
+  margin-top: 6px;
+}
+.policies-content p {
+  font-size: .92rem;
+  color: var(--color-ink-soft);
+  line-height: 1.6;
+}
+.policies-content strong { color: var(--color-ink); }
+.policies-content .btn { margin-top: 8px; }
 
 /* =====================================================
    BOTÓN FLOTANTE WHATSAPP
