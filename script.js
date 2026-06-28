@@ -234,13 +234,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }).join("\n");
 
     const mensaje =
-      `🛒 *Nuevo pedido — ${CONFIG.nombreEmpresa}*\n\n` +
+      `Gracias por comunicarte con COMPRÁ.COL🇨🇴📦✅
+
+Ya atenderemos tú pedido 📲✅
+
+ *🛍️ YA CONFIRMAMOS TUS DATOS* para su despacho 🚚📦
+
+*Nuevo pedido — ${CONFIG.nombreEmpresa}*\n\n` +
       `${lineas}\n\n` +
       `*Total:* ${formatearPrecio(cartTotalPrice())}\n\n` +
-      `*Nombre:* ${nombre}\n` +
-      `*Teléfono:* ${telefono}\n` +
-      `*Dirección de envío:* ${direccion}\n\n` +
-      `Quedo a la espera de la confirmación. ¡Gracias!`;
+      `*📌Nombre:* ${nombre}\n` +
+      `*📌Teléfono:* ${telefono}\n` +
+      `*📌Dirección de envío:* ${direccion}\n\n` +
+      `Quedo a la espera de la confirmación. Gracias!`;
 
     window.open(construirLinkWhatsapp(mensaje), "_blank");
   });
