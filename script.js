@@ -7,7 +7,7 @@
 const CONFIG = {
   // Número de WhatsApp SIN signos ni espacios, con código de país.
   // Ejemplo Colombia: "573001234567"
-  whatsappNumber: "573332420240",
+  whatsappNumber: "573001234567",
 
   // Nombre de la empresa / marca (se usa en el mensaje de WhatsApp)
   nombreEmpresa: "CompraCol",
@@ -16,10 +16,10 @@ const CONFIG = {
   moneda: "$",
 
   // Mensaje que se abre al tocar el botón flotante de WhatsApp (sin pedido)
-  mensajeFlotante: "Hola, quiero más información sobre los productos 📦✅",
+  mensajeFlotante: "Hola, quiero más información sobre los productos 🙋",
 
   // Mensaje del botón "Preguntar" del hero
-  mensajeHero: "Hola, vi su catálogo y quiero más información 📦✅"
+  mensajeHero: "Hola, vi su catálogo y quiero más información 🙋"
 };
 
 /* =========== 2. CATÁLOGO DE PRODUCTOS (EDITABLE) =========== */
@@ -200,23 +200,60 @@ function renderCheckoutSummary() {
   document.getElementById("checkout-form-total").textContent = formatearPrecio(cartTotalPrice());
 }
 
+/* =========== 7.1 MODAL DE POLÍTICAS DE ENVÍO Y DEVOLUCIONES =========== */
+function openPolicies() {
+  document.getElementById("policies-modal").classList.add("active");
+  document.getElementById("policies-overlay").classList.add("active");
+}
+function closePolicies() {
+  document.getElementById("policies-modal").classList.remove("active");
+  document.getElementById("policies-overlay").classList.remove("active");
+}
+
 /* =========== 8. INICIALIZACIÓN =========== */
+/* bindClick / bindHref: si el elemento no existe en el HTML, se avisa en   */
+/* consola pero el resto del script sigue funcionando con normalidad.      */
+function bindClick(id, handler) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.addEventListener("click", handler);
+  } else {
+    console.warn(`[CompraCol] No se encontró el elemento #${id} (revisa el HTML).`);
+  }
+}
+
+function bindHref(id, url) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.href = url;
+  } else {
+    console.warn(`[CompraCol] No se encontró el elemento #${id} (revisa el HTML).`);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   renderCatalog();
   renderCart();
 
-  document.getElementById("float-whatsapp").href = construirLinkWhatsapp(CONFIG.mensajeFlotante);
-  document.getElementById("hero-whatsapp").href = construirLinkWhatsapp(CONFIG.mensajeHero);
+  bindHref("float-whatsapp", construirLinkWhatsapp(CONFIG.mensajeFlotante));
+  bindHref("hero-whatsapp", construirLinkWhatsapp(CONFIG.mensajeHero));
+  bindHref("policies-whatsapp", construirLinkWhatsapp("Hola, tengo una duda sobre mi pedido 🙋"));
 
-  document.getElementById("open-cart").addEventListener("click", openCart);
-  document.getElementById("close-cart").addEventListener("click", closeCart);
-  document.getElementById("cart-overlay").addEventListener("click", closeCart);
+  bindClick("open-cart", openCart);
+  bindClick("close-cart", closeCart);
+  bindClick("cart-overlay", closeCart);
 
-  document.getElementById("go-checkout").addEventListener("click", openCheckout);
-  document.getElementById("close-checkout").addEventListener("click", closeCheckout);
-  document.getElementById("checkout-overlay").addEventListener("click", closeCheckout);
+  bindClick("go-checkout", openCheckout);
+  bindClick("close-checkout", closeCheckout);
+  bindClick("checkout-overlay", closeCheckout);
 
-  document.getElementById("checkout-form").addEventListener("submit", (e) => {
+  bindClick("open-policies", openPolicies);
+  bindClick("close-policies", closePolicies);
+  bindClick("policies-overlay", closePolicies);
+
+  const checkoutForm = document.getElementById("checkout-form");
+  if (checkoutForm) {
+    checkoutForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const nombre = document.getElementById("nombre").value.trim();
@@ -234,20 +271,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }).join("\n");
 
     const mensaje =
-      `Gracias por comunicarte con COMPRÁ.COL🇨🇴📦✅
-
-Ya atenderemos tú pedido 📲✅
-
- *🛍️ YA CONFIRMAMOS TUS DATOS* para su despacho 🚚📦
-
-*Nuevo pedido — ${CONFIG.nombreEmpresa}*\n\n` +
+      `🛒 *Nuevo pedido — ${CONFIG.nombreEmpresa}*\n\n` +
       `${lineas}\n\n` +
       `*Total:* ${formatearPrecio(cartTotalPrice())}\n\n` +
-      `*📌Nombre:* ${nombre}\n` +
-      `*📌Teléfono:* ${telefono}\n` +
-      `*📌Dirección de envío:* ${direccion}\n\n` +
-      `Quedo a la espera de la confirmación. Gracias!`;
+      `*Nombre:* ${nombre}\n` +
+      `*Teléfono:* ${telefono}\n` +
+      `*Dirección de envío:* ${direccion}\n\n` +
+      `Quedo a la espera de la confirmación. ¡Gracias!`;
 
-    window.open(construirLinkWhatsapp(mensaje), "_blank");
-  });
+      window.open(construirLinkWhatsapp(mensaje), "_blank");
+    });
+  }
 });
