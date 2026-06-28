@@ -33,11 +33,10 @@ const PRODUCTS = [
   { id: "p5",  name: "SHILAJIT Combo X3",  price: 99900,  oldPrice: 139900,  tag: null, img: "004.png" },
   { id: "p6",  name: "SmileKit Blanqueador Dental",  price: 49900,  oldPrice: null,   tag: null, img: "005.png" },
   { id: "p7",  name: "Rodillera Termica Electrica",  price: 79900,  oldPrice: 99900, tag: "-29%", img: "006.png" },
-  { id: "p8",  name: "Reflector Solar X3",  price: 99900,  oldPrice: null,   tag: null, img: "001.png" },
+  { id: "p8",  name: "Limpiador Electrico Tetero",  price: 79900,  oldPrice: null,   tag: null, img: "12.png" },
   { id: "p9",  name: "Rodilleras De Bebe AntiDeslizante",  price: 39900,  oldPrice: 59900,  tag: null, img: "009.png" },
   { id: "p10", name: "Bascula electronica con bluethoot", price: 79900,  oldPrice: null,   tag: "", img: "002.png" }
-  { id: "p11", name: "Tabla Push Up Fit", price: 79900,  oldPrice: null,   tag: "", img: "11.png" }
-  { id: "p11", name: "Limpiador Electrico Tetero", price: 79900,  oldPrice: null,   tag: "", img: "12.png" }
+
 ];
 
 /* =========== 3. ESTADO DEL CARRITO =========== */
