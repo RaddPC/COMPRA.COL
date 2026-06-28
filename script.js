@@ -7,7 +7,7 @@
 const CONFIG = {
   // Número de WhatsApp SIN signos ni espacios, con código de país.
   // Ejemplo Colombia: "573001234567"
-  whatsappNumber: "573001234567",
+  whatsappNumber: "573332420240",
 
   // Nombre de la empresa / marca (se usa en el mensaje de WhatsApp)
   nombreEmpresa: "CompraCol",
@@ -16,10 +16,10 @@ const CONFIG = {
   moneda: "$",
 
   // Mensaje que se abre al tocar el botón flotante de WhatsApp (sin pedido)
-  mensajeFlotante: "Hola, quiero más información sobre los productos 🙋",
+  mensajeFlotante: "Hola, quiero más información sobre los productos 🙋📦✅",
 
   // Mensaje del botón "Preguntar" del hero
-  mensajeHero: "Hola, vi su catálogo y quiero más información 🙋"
+  mensajeHero: "Hola, vi su catálogo y quiero más información 🙋📦✅"
 };
 
 /* =========== 2. CATÁLOGO DE PRODUCTOS (EDITABLE) =========== */
