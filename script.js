@@ -27,15 +27,15 @@ const CONFIG = {
 /* "tag" es opcional: úsalo para "Nuevo", "-20%", "Más vendido". */
 const PRODUCTS = [
   { id: "p1",  name: "Tensiometro Digital",  price: 79900,  oldPrice: 99900,  tag: "Más vendido", img: "007.png" },
-  { id: "p2",  name: "Producto 2 — Editar nombre",  price: 35900,  oldPrice: null,   tag: null,          img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+2" },
-  { id: "p3",  name: "Producto 3 — Editar nombre",  price: 89900,  oldPrice: 119900, tag: "-25%",        img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+3" },
-  { id: "p4",  name: "Producto 4 — Editar nombre",  price: 27900,  oldPrice: null,   tag: "Nuevo",       img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+4" },
-  { id: "p5",  name: "Producto 5 — Editar nombre",  price: 64900,  oldPrice: 79900,  tag: null,          img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+5" },
-  { id: "p6",  name: "Producto 6 — Editar nombre",  price: 42900,  oldPrice: null,   tag: null,          img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+6" },
-  { id: "p7",  name: "Producto 7 — Editar nombre",  price: 99900,  oldPrice: 139900, tag: "-29%",        img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+7" },
-  { id: "p8",  name: "Producto 8 — Editar nombre",  price: 31900,  oldPrice: null,   tag: null,          img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+8" },
-  { id: "p9",  name: "Producto 9 — Editar nombre",  price: 54900,  oldPrice: 64900,  tag: null,          img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+9" },
-  { id: "p10", name: "Producto 10 — Editar nombre", price: 74900,  oldPrice: null,   tag: "Nuevo",       img: "https://placehold.co/500x500/ffffff/0d1b2a?text=PRODUCTO+10" }
+  { id: "p2",  name: "Reflector Solar X3",  price: 99900,  oldPrice: null,   tag: null, img: "001.png" },
+  { id: "p3",  name: "Bascula electronica con bluethoot",  price: 79900,  oldPrice: 119900, tag: "-25%", img: "002.png" },
+  { id: "p4",  name: "Banda Elastica GYM X5",  price: 49900,  oldPrice: null,   tag: "Nuevo", img: "003.png" },
+  { id: "p5",  name: "SHILAJIT Combo X3",  price: 99900,  oldPrice: 139900,  tag: null, img: "004.png" },
+  { id: "p6",  name: "SmileKit Blanqueador Dental",  price: 49900,  oldPrice: null,   tag: null, img: "005.png" },
+  { id: "p7",  name: "Rodillera Termica Electrica",  price: 79900,  oldPrice: 99900, tag: "-29%", img: "006.png" },
+  { id: "p8",  name: "Manilla Repelente de Mosquito",  price: 49900,  oldPrice: null,   tag: null, img: "008.png" },
+  { id: "p9",  name: "Rodilleras De Bebe AntiDeslizante",  price: 39900,  oldPrice: 59900,  tag: null, img: "009.png" },
+  { id: "p10", name: "Neurocontrol del Sueño", price: 79900,  oldPrice: null,   tag: "Nuevo", img: "10.png" }
 ];
 
 /* =========== 3. ESTADO DEL CARRITO =========== */
