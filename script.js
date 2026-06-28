@@ -36,6 +36,8 @@ const PRODUCTS = [
   { id: "p8",  name: "Reflector Solar X3",  price: 99900,  oldPrice: null,   tag: null, img: "001.png" },
   { id: "p9",  name: "Rodilleras De Bebe AntiDeslizante",  price: 39900,  oldPrice: 59900,  tag: null, img: "009.png" },
   { id: "p10", name: "Bascula electronica con bluethoot", price: 79900,  oldPrice: null,   tag: "", img: "002.png" }
+  { id: "p11", name: "Tabla Push Up Fit", price: 79900,  oldPrice: null,   tag: "", img: "11.png" }
+  { id: "p11", name: "Limpiador Electrico Tetero", price: 79900,  oldPrice: null,   tag: "", img: "12.png" }
 ];
 
 /* =========== 3. ESTADO DEL CARRITO =========== */
