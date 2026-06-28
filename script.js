@@ -27,7 +27,7 @@ const CONFIG = {
 /* "tag" es opcional: úsalo para "Nuevo", "-20%", "Más vendido". */
 const PRODUCTS = [
   { id: "p1",  name: "Tensiometro Digital",  price: 79900,  oldPrice: 99900,  tag: "Más vendido", img: "007.png" },
-  { id: "p2",  name: "Manilla Repelente de Mosquito",  price: 49900,  oldPrice: null,   tag: null, img: "008.png" },
+  { id: "p2",  name: "Manilla Repelente de Mosquito",  price: 49900,  oldPrice: null,   tag: "Nuevo", img: "008.png" },
   { id: "p3",  name: "Dispositivo Neurocontrol del sueño",  price: 79900,  oldPrice: 119900, tag: "-25%", img: "10.png" },
   { id: "p4",  name: "Banda Elastica GYM X5",  price: 49900,  oldPrice: null,   tag: "Nuevo", img: "003.png" },
   { id: "p5",  name: "SHILAJIT Combo X3",  price: 99900,  oldPrice: 139900,  tag: null, img: "004.png" },
@@ -35,7 +35,7 @@ const PRODUCTS = [
   { id: "p7",  name: "Rodillera Termica Electrica",  price: 79900,  oldPrice: 99900, tag: "-29%", img: "006.png" },
   { id: "p8",  name: "Reflector Solar X3",  price: 99900,  oldPrice: null,   tag: null, img: "001.png" },
   { id: "p9",  name: "Rodilleras De Bebe AntiDeslizante",  price: 39900,  oldPrice: 59900,  tag: null, img: "009.png" },
-  { id: "p10", name: "Bascula electronica con bluethoot", price: 79900,  oldPrice: null,   tag: "Nuevo", img: "02.png" }
+  { id: "p10", name: "Bascula electronica con bluethoot", price: 79900,  oldPrice: null,   tag: "", img: "002.png" }
 ];
 
 /* =========== 3. ESTADO DEL CARRITO =========== */
